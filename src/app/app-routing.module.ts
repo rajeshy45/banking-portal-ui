@@ -15,7 +15,6 @@ import { UserprofilecardComponent } from './components/userprofilecard/userprofi
 import { TransactionHistoryComponent } from './components/transaction-history/transaction-history.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
-import { OtpComponent } from './components/otp/otp.component';
 import { NotfoundpageComponent } from './components/notfoundpage/notfoundpage.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
@@ -32,7 +31,6 @@ const routes: Routes = [
   { path: 'account/transaction-history', component: TransactionHistoryComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'login/otp', component: OtpComponent },
   { path: 'forget-password', component: ResetPasswordComponent },
   { path: '**', component: NotfoundpageComponent }, // Handle 404 - Page Not Found
 ];

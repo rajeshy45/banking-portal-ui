@@ -28,18 +28,6 @@ export class AuthService {
     return this.http.post<any>(`${this.baseUrl}/users/update`, payload);
   }
 
-  generateOTP(identifier: string): Observable<any> {
-    const body = { identifier: identifier };
-    return this.http.post(`${this.baseUrl}/users/generate-otp`, body);
-  }
-
-  verifyOTP(otpVerificationRequest: any): Observable<any> {
-    return this.http.post(
-      `${this.baseUrl}/users/verify-otp`,
-      otpVerificationRequest
-    );
-  }
-
   login(identifier: string, password: string): Observable<any> {
     const body = {
       identifier: identifier,
@@ -76,18 +64,6 @@ export class AuthService {
   }
 
   // Password reset
-  sendOtpForPasswordReset(identifier: string): Observable<any> {
-    const body = { identifier: identifier };
-    return this.http.post(`${this.baseUrl}/auth/password-reset/send-otp`, body);
-  }
-
-  verifyOtpForPasswordReset(identifier: string, otp: string): Observable<any> {
-    const body = { identifier: identifier, otp: otp };
-    return this.http.post(
-      `${this.baseUrl}/auth/password-reset/verify-otp`,
-      body
-    );
-  }
 
   resetPassword(
     identifier: string,

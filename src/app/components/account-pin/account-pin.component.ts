@@ -79,6 +79,7 @@ export class AccountPinComponent implements OnInit {
   }
 
   onSubmitGeneratePIN(): void {
+    console.log("Heloooooooooooooooooo")
     if (this.pinChangeForm.valid) {
       const newPin = this.pinChangeForm.get('newPin')?.value;
       const password = this.pinChangeForm.get('password')?.value;

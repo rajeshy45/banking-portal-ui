@@ -29,7 +29,6 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { LoginComponent } from './components/login/login.component';
 import { MonthlyTransactionChartComponent } from './components/monthly-transaction-chart/monthly-transaction-chart.component';
 import { NotfoundpageComponent } from './components/notfoundpage/notfoundpage.component';
-import { OtpComponent } from './components/otp/otp.component';
 import { PinCreationModelComponent } from './components/pin-creation-model/pin-creation-model.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { RegisterComponent } from './components/register/register.component';
@@ -62,7 +61,6 @@ import { ResetPasswordComponent } from './components/reset-password/reset-passwo
     SidebarComponent,
     PinCreationModelComponent,
     HomeComponent,
-    OtpComponent,
     LoaderComponent,
     NotfoundpageComponent,
     ProfileComponent,
